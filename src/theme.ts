@@ -1,5 +1,20 @@
-import { createTheme } from '@mantine/core';
+import { Button, createTheme } from '@mantine/core';
 
 export const theme = createTheme({
-  /** Put your mantine theme override here */
+  fontFamily: 'Georgia, sans-serif',
+  fontSizes:{md:"10"},
+  headings:{
+    fontFamily: 'Roboto, sans-serif',
+  },
+  colors:{
+
+  },
+   components: {
+    Button: Button.extend({
+      defaultProps: {
+        color: 'cyan',
+        variant: 'dark',
+      },
+    }),
+  },
 });
