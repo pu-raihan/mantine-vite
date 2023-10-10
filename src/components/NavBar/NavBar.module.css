@@ -1,0 +1,16 @@
+.navbanner {
+  background: rgba(92, 117, 118, 0.137);
+  border-radius: 2rem;
+}
+.navbarbtn {
+  background: transparent;
+  color: inherit;
+}
+.seldark {
+  background: white;
+  color: black;
+}
+.sellight {
+  background: rgb(0, 0, 0);
+  color: white;
+}

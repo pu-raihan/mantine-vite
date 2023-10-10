@@ -1,20 +1,18 @@
-import { Button, createTheme } from '@mantine/core';
+import { Button, createTheme, mergeMantineTheme, DEFAULT_THEME } from '@mantine/core';
 
-export const theme = createTheme({
-  fontFamily: 'Georgia, sans-serif',
-  fontSizes:{md:"10"},
-  headings:{
+export const themeOverride = createTheme({
+  fontFamily: 'Poppins, sans-serif',
+  headings: {
     fontFamily: 'Roboto, sans-serif',
   },
-  colors:{
-
-  },
-   components: {
+  colors: {},
+  components: {
     Button: Button.extend({
       defaultProps: {
-        color: 'cyan',
-        variant: 'dark',
+        // color: 'cyan',
+        // variant: 'light',
       },
     }),
   },
 });
+export const theme = mergeMantineTheme(DEFAULT_THEME, themeOverride);
